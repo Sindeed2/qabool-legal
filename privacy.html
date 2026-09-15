@@ -20,7 +20,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: September 10, 2026</p>
+    <p class="last-updated">Last Updated: September 14, 2026</p>
 
     <h2>1. Introduction</h2>
     <p>Qabool Cards ("the App") is an independently developed mobile application. This Privacy Policy describes what information the App handles, where that information is stored, and how long it is kept.</p>
@@ -34,7 +34,8 @@
 
     <h3>2.2 Information Collected Automatically</h3>
     <ul>
-        <li><strong>Usage data:</strong> Cards viewed, guided session progress, and app preferences are recorded on the user's own device.</li>
+        <li><strong>Local progress and preferences:</strong> Cards viewed, guided session progress, and app preferences are recorded on the user's own device. Multiplayer room settings and the current card state are also stored in the cloud as described in section 4.2.</li>
+        <li><strong>Multiplayer participant identifiers:</strong> The App generates an identifier when a player creates or joins a room. This identifier is stored with the player's display name and the shared room data for as long as the room remains open. It identifies the participant in that room and is not an account or device identifier.</li>
         <li>The App contains no analytics, advertising, or tracking software, and collects no device identifiers, location data, contacts, or advertising identifiers.</li>
         <li>The App has no accounts and no sign-in, so it holds no email addresses, passwords, or profiles.</li>
     </ul>
@@ -51,18 +52,20 @@
     <h2>4. Data Storage and Security</h2>
 
     <h3>4.1 On the Device</h3>
-    <p>Cards viewed, guided session progress, safe card usage, and preferences are stored on the user's device and are not transmitted anywhere.</p>
+    <p>The user's history of cards viewed, guided session progress, safe card usage, and preferences are stored on the user's device. This local history is not transmitted. The settings selected for a multiplayer room and its current card state are also shared through the cloud as described below.</p>
 
     <h3>4.2 In the Cloud</h3>
     <p>Multiplayer rooms are the only feature that sends anything off the device. While a room is open, the following is stored on a third-party cloud database service:</p>
     <ul>
         <li>The room code</li>
         <li>The display name each player entered</li>
+        <li>The generated participant identifier for each player, stored alongside that player's display name</li>
         <li>The deck settings chosen for that session, such as selected categories</li>
         <li>Which card the pair is currently on, and whether it is face up</li>
+        <li>The room's waiting, active, or ended status and the host's content-access flag</li>
         <li>Timestamps recording when the room was created and last used</li>
     </ul>
-    <p>Answers, discussions, and anything said between the two players are never transmitted or stored. The App synchronises the position in the deck and nothing further.</p>
+    <p>Answers, discussions, and anything said between the two players are never transmitted or stored. The App synchronises the room data listed above so both players can use the same deck and card state.</p>
 
     <h3>4.3 Security</h3>
     <p>Data exchanged with the cloud database is sent over an encrypted connection. No method of transmission or storage is completely secure, and users should not enter sensitive personal information as a display name.</p>
